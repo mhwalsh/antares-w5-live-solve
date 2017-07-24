@@ -1,7 +1,17 @@
 <div ng-controller='ListingController as lc'>
-  <div ng-repeat='listing in lc.listingData'>
-    {{listing.city}}
-    {{listing.cost}}
-    {{listing.sqft}}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 realestate" ng-repeat='listing in lc.listingData'>
+        <div>
+          City: {{listing.city}}
+        </div>
+        <div>
+          Cost: {{listing.cost}}
+        </div>
+        <div>
+          Square Feet: {{listing.sqft}}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
