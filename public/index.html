@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <title>test</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
   </head>
   <body ng-app='myApp'>
-    <div ng-controller='ListingController as lc'>
-      <div ng-repeat='listing in lc.listingData'>
-        {{listing}}
-      </div>
-    </div>
+    <a href="#!showListings">Listings</a>
+    <ng-view></ng-view>
   </body>
 </html>
